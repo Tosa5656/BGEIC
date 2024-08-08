@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build engine",
+            "type": "shell",
+            "command": "cmake . -B build; cmake --build build; build/Debug/BGEIC.exe",
+            "group": "build",
+        },
+    ]
+}
