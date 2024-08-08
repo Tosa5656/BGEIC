@@ -30,6 +30,19 @@ public:
     }
 
     //////////////////////////////////////////
+    /// \brief Logs an error message.
+    /// 
+    /// \param message The error message to be logged.
+    /////////////////////////////////////////
+    static void Error(bool message)
+    {
+        if(message == true)
+            std::cout << "Error: " << "true" << std::endl;
+        else
+            std::cout << "Error: " << "false" << std::endl;
+    }
+
+    //////////////////////////////////////////
     /// \brief Logs a warning message.
     /// 
     /// \param message The warning message to be logged.
@@ -40,6 +53,19 @@ public:
     }
 
     //////////////////////////////////////////
+    /// \brief Logs a warning message.
+    /// 
+    /// \param message The warning message to be logged.
+    /////////////////////////////////////////
+    static void Warning(bool message)
+    {
+        if(message == true)
+            std::cout << "Warning: " << "true" << std::endl;
+        else
+            std::cout << "Warning: " << "false" << std::endl;
+    }
+
+    //////////////////////////////////////////
     /// \brief Logs an info message.
     /// 
     /// \param message The info message to be logged.
@@ -47,5 +73,18 @@ public:
     static void Info(std::string message)
     {
         std::cout << message << std::endl; 
+    }
+
+    //////////////////////////////////////////
+    /// \brief Logs an info message.
+    /// 
+    /// \param message The info message to be logged.
+    /////////////////////////////////////////
+    static void Info(bool message)
+    {
+        if(message == true)
+            std::cout << "true" << std::endl;
+        else
+            std::cout << "false" << std::endl;
     }
 };
